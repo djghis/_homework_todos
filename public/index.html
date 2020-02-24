@@ -13,6 +13,11 @@
       <!-- <span>{{todo}}</span> -->
   </ul>
 
+  <form @submit.prevent="addNewTodo">
+    <label for="new-todo">Add to To do list:</label>
+    <input type="text" id="new-todo" v-model="newTodo">
+    <input type="submit" value="Save new todo">
+  </form>
 
 </div>
   </body>
